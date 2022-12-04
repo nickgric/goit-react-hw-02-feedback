@@ -47,7 +47,7 @@ export class App extends Component {
 
     return (
       <>
-        <h1>React-HW02 @nickgric</h1>
+        <h1>React-HW02_01 @nickgric</h1>
         <Section title="Please leave (positive) feedback">
           <FeedbackOptions
             options={Object.keys(state)}
@@ -62,12 +62,10 @@ export class App extends Component {
               feedbackPercentage={countFeedbackPercentage()}
             />
           )}
-        </Section>
-        {countTotalFeedback() === 0 && (
-          <Section>
+          {countTotalFeedback() === 0 && (
             <Notification message="No feedback given" />
-          </Section>
-        )}
+          )}
+        </Section>
       </>
     );
   }

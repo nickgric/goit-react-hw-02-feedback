@@ -15,9 +15,7 @@ export class Statistics extends Component {
         <p>
           <b>Total:</b> {total}
         </p>
-        <p>
-          <b>Percentage:</b>
-        </p>
+        <h3>Percentage:</h3>
         <ul>
           {Object.entries(feedbackPercentage).map(option => (
             <li name={option[0]} key={option[0]}>
